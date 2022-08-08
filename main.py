@@ -2,9 +2,9 @@ from riotwatcher import LolWatcher, ApiError
 import random
 import json
 
-from API_login import Login
+from API_wrapper import Api
 
-api = Login()
+api = Api()
 
 watcher = api.lolwatcher
 
