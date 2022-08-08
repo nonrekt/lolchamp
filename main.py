@@ -2,10 +2,11 @@ from riotwatcher import LolWatcher, ApiError
 import random
 import json
 
-with open('API_key.json') as f:
-    API_KEY = json.load(f)
+from API_login import Login
 
-watcher = LolWatcher(API_KEY)
+api = Login()
+
+watcher = api.lolwatcher
 
 
 def convertIdToName(id):
