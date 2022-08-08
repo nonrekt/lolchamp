@@ -5,7 +5,7 @@ from riotwatcher import LolWatcher, ApiError
 
 class Api:
     def __init__(self):
-        with open('API_keyjson') as f:
+        with open('API_key.json') as f:
             self.api_key = json.load(f)
 
         self.lolwatcher = LolWatcher(self.api_key)
